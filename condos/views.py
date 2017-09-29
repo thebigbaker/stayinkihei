@@ -57,3 +57,6 @@ class KapaluaBayView(TemplateView):
 
 class HonoluaBayView(TemplateView):
     template_name = 'beaches/west_maui_beaches/honolua_bay.html'
+
+class NorthMauiBeachesView(TemplateView):
+    template_name = 'beaches/north_maui_beaches/north_maui_beaches.html'
