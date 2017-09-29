@@ -19,7 +19,7 @@ from condos import views
 
 
 urlpatterns = [
-    url(r'^$', views.IndexView.as_view(), name='Index'),
+    url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^admin/', admin.site.urls),
     url(r'', include('condos.urls'))
 ]
