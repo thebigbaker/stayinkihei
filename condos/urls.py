@@ -30,7 +30,13 @@ urlpatterns = [
     url(r'^activities/drive-to-hana/$', views.DriveToHanaView.as_view(), name='drive_to_hana'),
     url(r'^activities/maui-friday-town-parties/$', views.MauiFridayTownPartiesView.as_view(), name='maui_friday_town_parties'),
     url(r'^activities/alii-kula-lavendar-farm/$', views.AliiKulaLavendarFarmView.as_view(), name='alii_kula_lavendar_farm'),
-    
+    url(r'^places-to-eat/$', views.PlacesToEatView.as_view(), name='places_to_eat'),
+    url(r'^places-to-eat/kihei-restaurants/$', views.KiheiRestaurantsView.as_view(), name='kihei_restaurants'),
+    url(r'^places-to-eat/lahaina-restaurants/$', views.LahainaRestaurantsView.as_view(), name='lahaina_restaurants'),
+    url(r'^places-to-eat/kaanapali-restaurants/$', views.KaanapaliRestaurantsView.as_view(), name='kaanapali_restaurants'),
+    url(r'^places-to-eat/paia-restaurants/$', views.PaiaRestaurantsView.as_view(), name='paia_restaurants'),
+    url(r'^more-maui-info/$', views.MoreMauiInfoView.as_view(), name='more_maui_info'),
+    url(r'^more-maui-info/groceries/$', views.GroceriesView.as_view(), name='groceries'),
 
 
 ]

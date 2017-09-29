@@ -90,3 +90,24 @@ class MauiFridayTownPartiesView(TemplateView):
 
 class AliiKulaLavendarFarmView(TemplateView):
     template_name = 'activities/alii_kula_lavendar_farm.html'
+
+class PlacesToEatView(TemplateView):
+    template_name = 'places_to_eat/places_to_eat.html'
+
+class KiheiRestaurantsView(TemplateView):
+    template_name = 'places_to_eat/kihei_restaurants.html'
+
+class LahainaRestaurantsView(TemplateView):
+    template_name = 'places_to_eat/lahaina_restaurants.html'
+
+class KaanapaliRestaurantsView(TemplateView):
+    template_name = 'places_to_eat/kaanapali_restaurants.html'
+
+class PaiaRestaurantsView(TemplateView):
+    template_name = 'places_to_eat/paia_restaurants.html'
+
+class MoreMauiInfoView(TemplateView):
+    template_name = 'more_maui_info/more_maui_info.html'
+
+class GroceriesView(TemplateView):
+    template_name = 'more_maui_info/groceries.html'
