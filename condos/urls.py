@@ -15,5 +15,9 @@ urlpatterns = [
     url(r'^beaches/south-maui/palauea-beach/$', views.PalaueaView.as_view(), name='palauea'),
     url(r'^beaches/south-maui/poolenalena-beach/$', views.PoolenalenaView.as_view(), name='poolenalena'),
     url(r'^beaches/south-maui/la-perouse-bay/$', views.LaPerouseBayView.as_view(), name='la_perouse_bay'),
-
+    url(r'^beaches/west-maui/$', views.WestMauiBeachesView.as_view(), name='west_maui'),
+    url(r'^beaches/west-maui/kaanapali-beach/$', views.KaanapaliBeachView.as_view(), name='kaanapali_beach'),
+    url(r'^beaches/west-maui/napili-bay/$', views.NapiliBayView.as_view(), name='napili_bay'),
+    url(r'^beaches/west-maui/kapalua-bay/$', views.KapaluaBayView.as_view(), name='kapalua_bay'),
+    url(r'^beaches/west-maui/honolua-bay/$', views.HonoluaBayView.as_view(), name='honolua_bay'),
 ]
