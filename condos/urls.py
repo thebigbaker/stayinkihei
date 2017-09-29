@@ -21,6 +21,16 @@ urlpatterns = [
     url(r'^beaches/west-maui/kapalua-bay/$', views.KapaluaBayView.as_view(), name='kapalua_bay'),
     url(r'^beaches/west-maui/honolua-bay/$', views.HonoluaBayView.as_view(), name='honolua_bay'),
     url(r'^beaches/north-maui/$', views.NorthMauiBeachesView.as_view(), name='north_maui_beaches'),
+    url(r'^activities/$', views.ActivitiesView.as_view(), name='activities'),
+    url(r'^activities/old-lahaina-luau/$', views.OldLahainaLuauView.as_view(), name='old_lahaina_luau'),
+    url(r'^activities/whale-watching/$', views.WhaleWatchingView.as_view(), name='whale_watching'),
+    url(r'^activities/maui-ocean-center-and-aquarium/$', views.AquariumView.as_view(), name='aquarium'),
+    url(r'^activities/haleakala/$', views.HaleakalaView.as_view(), name='haleakala'),
+    url(r'^activities/snorkeling/$', views.SnorkelingView.as_view(), name='snorkeling'),
+    url(r'^activities/drive-to-hana/$', views.DriveToHanaView.as_view(), name='drive_to_hana'),
+    url(r'^activities/maui-friday-town-parties/$', views.MauiFridayTownPartiesView.as_view(), name='maui_friday_town_parties'),
+    url(r'^activities/alii-kula-lavendar-farm/$', views.AliiKulaLavendarFarmView.as_view(), name='alii_kula_lavendar_farm'),
+    
 
 
 ]

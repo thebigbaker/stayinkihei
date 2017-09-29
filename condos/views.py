@@ -60,3 +60,33 @@ class HonoluaBayView(TemplateView):
 
 class NorthMauiBeachesView(TemplateView):
     template_name = 'beaches/north_maui_beaches/north_maui_beaches.html'
+
+class ActivitiesView(TemplateView):
+    template_name = 'activities/activities.html'
+
+class ActivitiesView(TemplateView):
+    template_name = 'activities/activities.html'
+
+class OldLahainaLuauView(TemplateView):
+    template_name = 'activities/old_lahaina_luau.html'
+
+class WhaleWatchingView(TemplateView):
+    template_name = 'activities/whale_watching.html'
+
+class AquariumView(TemplateView):
+    template_name = 'activities/aquarium.html'
+
+class HaleakalaView(TemplateView):
+    template_name = 'activities/haleakala.html'
+
+class SnorkelingView(TemplateView):
+    template_name = 'activities/snorkeling.html'
+
+class DriveToHanaView(TemplateView):
+    template_name = 'activities/drive_to_hana.html'
+
+class MauiFridayTownPartiesView(TemplateView):
+    template_name = 'activities/maui_friday_town_parties.html'
+
+class AliiKulaLavendarFarmView(TemplateView):
+    template_name = 'activities/alii_kula_lavendar_farm.html'
