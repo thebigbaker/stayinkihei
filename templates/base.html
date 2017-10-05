@@ -5,52 +5,67 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-    {% block meta %}
-    {% endblock %}
 
     <title>{% block title %} Base {% endblock %}</title>
   </head>
   <body>
 
-    <div class="jumbotron">
-      <h1>{% block jumbo_title %}Title{% endblock %}</h1>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="">Stay In Kihei</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="{%url 'index' %}">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'condos' %}">Condos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'beaches' %}">Beaches</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'activities' %}">Activities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'places_to_eat' %}">Places To Eat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'more_maui_info' %}">More Maui Informtaion</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="wrapper">
+      <div class="title">Stay In Kihei</div>
 
-    </div>
+      <div class="nav-top">
+        <ul class="nav nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'index' %}">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'condos' %}">Condos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'beaches' %}">Beaches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'activities' %}">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'places_to_eat' %}">Places To Eat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'more_maui_info' %}">More Maui Info</a>
+          </li>
+        </ul>
+      </div>
 
-      {% block body_block %}
-      {% endblock %}
+      <div class="footer">
+
+      <div class="booking-options">For Booking Optioins<br>
+              Kihei Kai Nani<br>
+              <a href="https://www.vrbo.com/406623">www.vrbo.com/406623</a><br>
+              <br>
+              Pacific Shores<br>
+              <a href="https://www.vrbo.com/858569">www.vrbo.com/858569</a>
+      </div>
+
+      <div class="locations">Find Us<br>
+                              Kihei Kai Nani<br>
+                              2495 S Kihei Rd<br>
+                              Kihei, HI 96753<br>
+                              <br>
+                              Pacific Shores<br>
+                              2219 S Kihei Rd<br>
+                              Kihei, HI 96753
+      </div>
+
+
+
+      <div class="email">Email Us<br>jeremy@stayinkihei.com</div>
+
+      <div class="social-media">Facebook/Youtube</div>
+
+  </div>
+  {% block body_block %}
+  {% endblock %}
+
 
   </body>
 </html>

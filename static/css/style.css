@@ -1,0 +1,125 @@
+body {
+  color: #fff;
+  font-family: arial;
+  background: url('/static/imgs/index/palm_trees_sunglow.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(30, 1fr;)
+  grid-gap: 5px
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  grid-gap: 10px;
+}
+
+/*-----give areas backgrounds for setting up ----*/
+/*.wrapper div {
+  background: #3bbced;
+  padding: 30px;
+}
+
+.wrapper div:nth-child(even) {
+  background: #777;
+}*/
+
+
+.title {
+  grid-row: 5/7;
+  grid-column: 4/10;
+  font-size: 36px;
+  font-family: 'Niconne', cursive;
+
+
+}
+
+
+/*----Navbar Area----*/
+.nav-top {
+  grid-row: 9/10;
+  grid-column: 2/12;
+
+  /*display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;8?*/
+}
+
+.nav-top a {
+  font-style: italic;
+  color: #3469BF;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*.nav div {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0;
+  font-style: italic;
+}*/
+
+
+/*----Main Content Area----*/
+.main {
+  grid-row: 14;
+  grid-column: 1/13;
+  grid-auto-rows: minmax(200px, auto);
+  font-size: 80px;
+  font-family: 'Lobster', cursive;
+  color: #186D6E;
+  text-shadow: #ffffff 3px 3px 0px, rgba(0, 0, 0, 0.2) 6px 6px 0px;
+
+
+}
+
+.main p {
+  text-align: center;
+
+
+}
+
+/*----Footer Area----*/
+.footer {
+  grid-row: 29/31;
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: rgba(255, 255, 255, 0.7)
+
+}
+
+
+/*.footer div {
+  border: 1px solid black;
+}*/
+
+.booking-options {
+  grid-column: 4/5;
+  grid-row: 1/4;
+
+}
+
+
+.locations {
+  grid-row: 1/4;
+  grid-column: 6/8;
+}
+
+.email {
+  grid-column: 9/10;
+  grid-row: 1/2;
+}
+
+.social-media{
+  grid-column: 9/10;
+  grid-row: 3/4;
+}
