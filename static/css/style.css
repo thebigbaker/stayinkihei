@@ -105,18 +105,55 @@ body {
 .booking-options {
   grid-column: 4/5;
   grid-row: 1/4;
+  padding: 20px;
 
+}
+
+.booking-options h3 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+}
+
+.booking-options p {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
 }
 
 
 .locations {
   grid-row: 1/4;
   grid-column: 6/8;
+  padding: 20px;
 }
+
+.locations h3 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+}
+
+.locations p {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
+}
+
 
 .email {
   grid-column: 9/10;
   grid-row: 1/2;
+  padding: 20px;
+}
+
+.email h3 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+}
+
+.email p {
+  font-size: 15px;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .social-media{
