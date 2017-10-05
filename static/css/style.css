@@ -1,4 +1,4 @@
-body {
+/*body {
   color: #fff;
   font-family: arial;
   background: url('/static/imgs/index/palm_trees_sunglow.jpg') no-repeat center center fixed;
@@ -6,9 +6,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
-}
+}*/
 
 .wrapper {
   display: grid;
@@ -37,8 +35,6 @@ body {
   grid-column: 4/10;
   font-size: 36px;
   font-family: 'Niconne', cursive;
-
-
 }
 
 
@@ -66,8 +62,10 @@ body {
   font-style: italic;
 }*/
 
+/*-------------------------------*/
+/*----Index Main Content Area----*/
+/*-------------------------------*/
 
-/*----Main Content Area----*/
 .main {
   grid-row: 14;
   grid-column: 1/13;
@@ -76,37 +74,28 @@ body {
   font-family: 'Lobster', cursive;
   color: #186D6E;
   text-shadow: #ffffff 3px 3px 0px, rgba(0, 0, 0, 0.2) 6px 6px 0px;
-
-
 }
 
 .main p {
   text-align: center;
-
-
 }
-
+/*-------------------*/
 /*----Footer Area----*/
+/*-------------------*/
+
 .footer {
   grid-row: 29/31;
   grid-column: 1/13;
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(5, 1fr);
-  background-color: rgba(255, 255, 255, 0.7)
-
+  grid-auto-rows: minmax(200px, auto);
+  background-color: rgba(255, 255, 255, 0.7);
 }
-
-
-/*.footer div {
-  border: 1px solid black;
-}*/
 
 .booking-options {
   grid-column: 4/5;
   grid-row: 1/4;
-  padding: 20px;
-
+  padding-top: 20px;
 }
 
 .booking-options h3 {
@@ -124,7 +113,7 @@ body {
 .locations {
   grid-row: 1/4;
   grid-column: 6/8;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .locations h3 {
@@ -142,7 +131,7 @@ body {
 .email {
   grid-column: 9/10;
   grid-row: 1/2;
-  padding: 20px;
+  padding-top: 20px
 }
 
 .email h3 {
@@ -159,4 +148,51 @@ body {
 .social-media{
   grid-column: 9/10;
   grid-row: 3/4;
+}
+
+
+
+
+/*----------------------------*/
+/*----condos.html css---------*/
+/*----------------------------*/
+
+
+.condos-block {
+  grid-row: 14;
+  grid-column: 3/11;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+}
+
+
+.kkn-box {
+  grid-row: 1/6;
+  grid-column: 1/13;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 5px 5px black;
+}
+
+.kkn-box img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.ps-box {
+  grid-row: 7/12;
+  grid-column: 1/13;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 5px 5px black;
+}
+
+.ps-box img {
+  width: 100%;
+  height: auto;
 }
