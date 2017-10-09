@@ -1,2 +1,18 @@
 
-<h1>Pacific Shores Page</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Stay In Kihei {% endblock %}
+
+{% block additional_styles %}
+<style>
+body {
+  font-family: arial;
+  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+{% endblock %}

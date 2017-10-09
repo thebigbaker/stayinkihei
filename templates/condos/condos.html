@@ -16,29 +16,36 @@ body {
 </style>
 {% endblock %}
 
-{%  block body_block %}
-<div class="condos-block">
-  <h2></h2>
-  <div class="kkn-box">
-    <a href="{% url 'kkn' %}">
-      <img src="{% static 'imgs/condos/kkn_bedroom.jpg' %}" alt="KKN Bedroom">
-    </a>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    </p>
+{%  block main %}
+<!---<div class="condos-block">--->
+
+  <div class="condos-block">
+
+    <div class="condos-title">
+      <h2>Our Condos</h2>
+    </div>
+
+
+    <div class="kkn-box">
+      <a href="{% url 'kkn' %}">
+        <img src="{% static 'imgs/condos/kkn_bedroom.jpg' %}" alt="KKN Bedroom">
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      </p>
+    </div>
+
+    <div class="ps-box">
+      <img src="{% static 'imgs/condos/ps_bedroom.jpg' %}" alt="PS Bedroom">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      </p>
+
   </div>
-
-  <div class="ps-box">
-    <img src="{% static 'imgs/condos/ps_bedroom.jpg' %}" alt="PS Bedroom">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    </p>
-
-
 </div>
 {% endblock %}
 
