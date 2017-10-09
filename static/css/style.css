@@ -22,7 +22,7 @@
 
 header {
   grid-area: head;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   text-align: center;
 }
 .title h1 {
@@ -32,7 +32,7 @@ header {
 
 nav {
   grid-area: nav;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .nav-top a {
@@ -45,7 +45,7 @@ nav {
 
 main {
   grid-area: main;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 
 }
 
@@ -57,96 +57,111 @@ main {
 
 footer {
   grid-area: foot;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 .foot {
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(2, 1fr);
+  /*grid-template-rows: repeat(2, 1fr);*/
   background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  grid-gap: 10px;
 }
 
+.foot p {
+  font-size: 10px;
+}
 
 .booking-options {
-  grid-column: 2/5;
+  grid-column: 1/3;
   grid-row: 1/2;
-  border: 1px solid black;
+  padding-top: 20px;
+  /*border: 1px solid black;*/
 }
 
 
-.booking-options h3 {
+.booking-options h5 {
   font-style: italic;
   text-decoration: underline;
   font-family: 'Niconne', cursive;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 
 .booking-options p {
-  font-size: 15px;
   font-family: 'Catamaran', sans-serif;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 
 .locations {
   grid-row: 1;
-  grid-column: 7/9;
-  border: 1px solid black;
+  grid-column: 3/4;
+  padding-top: 20px;
+  /*border: 1px solid black;*/
 }
 
 
-.locations h3 {
+.locations h5 {
   font-style: italic;
   text-decoration: underline;
   font-family: 'Niconne', cursive;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 
 .locations p {
-  font-size: 15px;
   font-family: 'Catamaran', sans-serif;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 
 .email {
-  grid-column: 11/12;
+  grid-column: 4/5;
   grid-row: 1;
-  border: 1px solid black;
+  padding-top: 20px;
+  /*border: 1px solid black;*/
 }
 
 
-.email h3 {
+.email h5 {
   font-style: italic;
   text-decoration: underline;
   font-family: 'Niconne', cursive;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 
 .email p {
-  font-size: 15px;
   font-family: 'Catamaran', sans-serif;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
 
 .social-media{
-  grid-column: 9/11;
-  grid-row: 2/3;
-  border: 1px solid black;
+  grid-column: 6/8;
+  padding-top: 20px;
+  /*grid-row: 2/3;*/
+  /*border: 1px solid black;*/
 }
+
+
+.social-media h5 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+}
+
 
 .tax-info {
-  grid-row: 2/3;
-  grid-column: 3/8;
+  /*grid-row: 11/13;*/
+  grid-column: 9/13;
+  padding-top: 20px;
 }
 
 
-.tax-info h3 {
+.tax-info h5 {
   font-style: italic;
   text-decoration: underline;
   font-family: 'Niconne', cursive;
@@ -163,6 +178,11 @@ footer {
   color: #186D6E;
   text-shadow: #ffffff 3px 3px 0px, rgba(0, 0, 0, 0.2) 6px 6px 0px;
   text-align: center
+}
+
+.empty-box {
+  display: grid;
+  grid-template-rows: 300px;
 }
 
 
@@ -201,6 +221,10 @@ footer {
   height: auto;
 }
 
+.kkn-box p {
+  padding: 20px
+}
+
 
 .ps-box {
   grid-row: 5;
@@ -214,6 +238,10 @@ footer {
 .ps-box img {
   width: 100%;
   height: auto;
+}
+
+.ps-box p {
+  padding: 20px;
 }
 
 
@@ -259,4 +287,78 @@ footer {
   padding: 30px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(255, 255, 255, 0.85)
+}
+
+.kkn-map {
+  grid-column: 3/10;
+  justify-self: center;
+}
+
+
+/*-----------------*/
+/*-----ps page-----*/
+/*-----------------*/
+
+.ps-content {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 1rem;
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+}
+
+.ps-content h3 {
+  font-family: 'Niconne', cursive;
+}
+
+.ps-description {
+  grid-row: 1;
+  grid-column: 1/12;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.85)
+}
+
+.ps-video {
+  grid-column: 3/10;
+  align-self: center;
+  justify-self: center;
+}
+
+.ps-photos {
+  grid-column: 1/12;
+  border: 1px solid black;
+}
+
+.ps-info {
+  grid-column: 1/12;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.85)
+}
+
+/*----------------------*/
+/*-----beaches page-----*/
+/*----------------------*/
+
+.south-beaches-card {
+  box-shadow: 5px 5px 5px black;
+}
+
+.west-beaches-card {
+  box-shadow: 5px 5px 5px black;
+}
+
+.north-beaches-card {
+  box-shadow: 5px 5px 5px black;
+}
+
+.card-body h4 {
+  font-family: 'Niconne', cursive;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.card-body p {
+  font-family: Arial, Helvetica, sans-serif;
 }

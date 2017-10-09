@@ -4,5 +4,67 @@
 {% block title %} Beaches {% endblock %}
 
 
-{%  block body_block %}
+<!---{% block additional_styles %}
+<style>
+body {
+  font-family: arial;
+  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+{% endblock %}--->
+
+
+{%block main%}
+<div class="south-beaches-card">
+  <div class="card mb-3">
+    <a href="{% url 'south_maui_beaches' %}">
+      <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+    </a>
+      <div class="card-body">
+        <h4 class="card-title">South Maui Beaches</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse ci.</p>
+        <p class="card-text"><small class="text-muted">Click the image above to
+          see descriptions, pictures and maps of our favorite South Maui beaches!</small></p>
+      </div>
+  </div>
+</div>
+
+<div class="west-beaches-card">
+  <div class="card mb-3">
+    <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">West Maui Beaches</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse ci.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+  </div>
+</div>
+
+<div class="north-beaches-card">
+  <div class="card mb-3">
+    <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      <div class="card-body">
+        <h4 class="card-title">North Maui Beaches</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse ci.</p>
+        <p class="card-text"><small class="text-muted">Click the image above to
+          see a list of our favorite South Maui beaches!</small></p>
+      </div>
+  </div>
+</div>
 {% endblock %}
