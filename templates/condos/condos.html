@@ -21,32 +21,37 @@ body {
 
   <div class="condos-block">
 
-    <div class="condos-title">
+    <!---<div class="condos-title">
       <h2>Our Condos</h2>
-    </div>
+    </div>--->
 
 
     <div class="kkn-box">
       <a href="{% url 'kkn' %}">
         <img src="{% static 'imgs/condos/kkn_bedroom.jpg' %}" alt="KKN Bedroom">
       </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      </p>
+      <div class="kkn-box-content">
+        <h4>Kihei Kai Nani Condo</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        c ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        </p>
+      </div>
     </div>
 
     <div class="ps-box">
       <a href="{% url 'pacific_shores' %}">
         <img src="{% static 'imgs/condos/ps_bedroom.jpg' %}" alt="PS Bedroom">
       </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      </p>
-
+      <div class="ps-box-content">
+        <h4>Pacific Shores Condo</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        </p>
+      </div>
+    </div>
   </div>
-</div>
 {% endblock %}
