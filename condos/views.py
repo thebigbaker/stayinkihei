@@ -23,7 +23,7 @@ class KamaoleBeachesView(TemplateView):
     template_name = 'beaches/south_maui_beaches/kamaole_beaches.html'
 
 class KalamaParkView(TemplateView):
-    template_name = 'beaches/south_maui_beacheskalama_park.html'
+    template_name = 'beaches/south_maui_beaches/kalama_park.html'
 
 class KeawakapuView(TemplateView):
     template_name = 'beaches/south_maui_beaches/keawakapu.html'
@@ -40,8 +40,13 @@ class PalaueaView(TemplateView):
 class PoolenalenaView(TemplateView):
     template_name = 'beaches/south_maui_beaches/poolenalena.html'
 
-class LaPerouseBayView(TemplateView):
-    template_name = 'beaches/south_maui_beaches/la_perouse_bay.html'
+class MaluakaView(TemplateView):
+    template_name = 'beaches/south_maui_beaches/maluaka.html'
+
+class BigBeachView(TemplateView):
+    template_name = 'beaches/south_maui_beaches/big_beach.html'
+
+
 
 class WestMauiBeachesView(TemplateView):
     template_name = 'beaches/west_maui_beaches/west_maui_beaches.html'
@@ -84,6 +89,9 @@ class SnorkelingView(TemplateView):
 
 class DriveToHanaView(TemplateView):
     template_name = 'activities/drive_to_hana.html'
+
+class LaPerouseBayView(TemplateView):
+    template_name = 'activities/la_perouse_bay.html'
 
 class MauiFridayTownPartiesView(TemplateView):
     template_name = 'activities/maui_friday_town_parties.html'

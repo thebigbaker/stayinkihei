@@ -8,7 +8,7 @@
   grid-template-rows: minmax(100px, auto);
   max-width: 960px;
   margin: 0 auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
   grid-template-areas: "head head head head head head head head head head head head"
                        "nav nav nav nav nav nav nav nav nav nav nav nav"
                        "main main main main main main main main main main main main"
@@ -97,7 +97,7 @@ footer {
 
 .locations {
   grid-row: 1;
-  grid-column: 3/4;
+  grid-column: 3/5;
   padding-top: 20px;
   /*border: 1px solid black;*/
 }
@@ -118,7 +118,7 @@ footer {
 
 
 .email {
-  grid-column: 4/5;
+  grid-column: 5/7;
   grid-row: 1;
   padding-top: 20px;
   /*border: 1px solid black;*/
@@ -140,7 +140,7 @@ footer {
 
 
 .social-media{
-  grid-column: 6/8;
+  grid-column: 7/9;
   padding-top: 20px;
   /*grid-row: 2/3;*/
   /*border: 1px solid black;*/
@@ -361,4 +361,24 @@ footer {
 
 .card-body p {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*---------------------------------*/
+/*-----south maui beaches page-----*/
+/*---------------------------------*/
+
+.card-deck h4{
+  font-family: 'Niconne', cursive;
+  font-size: 32px;
+}
+
+.card-block {
+  display: grid;
+  grid-gap: 30px;
+}
+
+.card {
+  box-shadow: 5px 5px 5px black;
 }
