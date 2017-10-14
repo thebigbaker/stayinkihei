@@ -3,55 +3,36 @@
 
 {% block title %} Condos {% endblock %}
 
-{% block additional_styles %}
-<style>
-body {
-  font-family: arial;
-  background: url({% static 'imgs/condos/kam_morning.jpg' %}) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-</style>
-{% endblock %}
+
 
 {%  block main %}
-<!---<div class="condos-block">--->
-
-  <div class="condos-block">
-
-    <!---<div class="condos-title">
-      <h2>Our Condos</h2>
-    </div>--->
-
-
-    <div class="kkn-box">
-      <a href="{% url 'kkn' %}">
-        <img src="{% static 'imgs/condos/kkn_bedroom.jpg' %}" alt="KKN Bedroom">
-      </a>
-      <div class="kkn-box-content">
-        <h4>Kihei Kai Nani Condo</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        c ommodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        </p>
-      </div>
-    </div>
-
-    <div class="ps-box">
-      <a href="{% url 'pacific_shores' %}">
-        <img src="{% static 'imgs/condos/ps_bedroom.jpg' %}" alt="PS Bedroom">
-      </a>
-      <div class="ps-box-content">
-        <h4>Pacific Shores Condo</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        </p>
-      </div>
+<div class="condos-block">
+  <div class="kkn-box">
+    <a href="{% url 'kkn' %}">
+      <img src="{% static 'imgs/condos/kkn_bedroom.jpg' %}" alt="KKN Bedroom">
+    </a>
+    <div class="kkn-box-content">
+      <h4>Kihei Kai Nani Condo</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      </p>
     </div>
   </div>
+
+  <div class="ps-box">
+    <a href="{% url 'pacific_shores' %}">
+      <img src="{% static 'imgs/condos/ps_bedroom.jpg' %}" alt="PS Bedroom">
+    </a>
+    <div class="ps-box-content">
+      <h4>Pacific Shores Condo</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      </p>
+    </div>
+  </div>
+</div>
 {% endblock %}

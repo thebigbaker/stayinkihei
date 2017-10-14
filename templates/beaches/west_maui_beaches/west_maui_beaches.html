@@ -1,2 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
 
-<h1>West Maui Beaches Play</h1>
+{% block title %} Beaches {% endblock %}
+
+
+<!---{% block additional_styles %}
+<style>
+body {
+  font-family: arial;
+  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+{% endblock %}--->
+
+
+{%block main%}
+<div class="west-beaches-block">
+  <div class="card-deck">
+    <div class="card">
+      <a href="{% url 'kaanapali_beach' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title">Ka'anapali Beach</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Click the picture for more Ka'anapali Beach pictures and information!</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="{% url 'napili_bay' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title">Napili Bay</h4>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Click the picture for more Napili Bay pictures and information!</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck">
+    <div class="card">
+      <a href="{% url 'kapalua_bay' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title">Kapalua Bay</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Click the picture for more Kapalua Bay pictures and information!</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="{% url 'honolua_bay' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      </a>
+      <div class="card-body">
+        <h4 class="card-title">Honolua Bay</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Click the picture for more Honolua Bay pictures and information!</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

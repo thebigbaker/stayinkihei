@@ -20,7 +20,7 @@ body {
 
 {%block main%}
 <div class="beaches-block">
-  
+
   <div class="south-beaches-card">
     <div class="card mb-3">
       <a href="{% url 'south_maui_beaches' %}">
@@ -41,7 +41,9 @@ body {
 
   <div class="west-beaches-card">
     <div class="card mb-3">
-      <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      <a href="{% url 'west_maui_beaches' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      </a>
         <div class="card-body">
           <h4 class="card-title">West Maui Beaches</h4>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur
@@ -56,7 +58,9 @@ body {
 
   <div class="north-beaches-card">
     <div class="card mb-3">
-      <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      <a href="{% url 'north_maui_beaches' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/poolena.jpg' %}" alt="Card image cap">
+      </a>
         <div class="card-body">
           <h4 class="card-title">North Maui Beaches</h4>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur

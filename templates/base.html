@@ -42,12 +42,31 @@
             <li class="nav-item">
               <a class="nav-link active" href="{% url 'index' %}">Welcome</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Our Condos</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'kkn' %}">Kihei Kai Nani</a>
+                <a class="dropdown-item" href="{% url 'pacific_shores' %}">Pacific Shores</a>
+              </div>
+            </li>
+            <!---<li class="nav-item">
               <a class="nav-link" href="{% url 'condos' %}">Our Condos</a>
+            </li>--->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Our Favorite Beaches</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'south_maui_beaches' %}">South Maui Beaches</a>
+                <a class="dropdown-item" href="{% url 'west_maui_beaches' %}">West Maui Beaches</a>
+                <a class="dropdown-item" href="{% url 'north_maui_beaches' %}">Norht Maui Beaches</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'beaches' %}">Beaches</a>
-            </li>
+            <!---<li class="nav-item">
+              <a class="nav-link" href="{% url 'beaches' %}">Our Favorite Beaches</a>
+            </li>--->
             <li class="nav-item">
               <a class="nav-link" href="{% url 'activities' %}">Activities</a>
             </li>
