@@ -418,6 +418,153 @@ footer {
 
 
 
+/*--------------------------*/
+/*-----kalama park page-----*/
+/*--------------------------*/
+
+.kalama-park-block {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 1rem;
+}
+
+
+.kalama-park-info {
+grid-column: 1/12;
+background-color: rgba(255, 255, 255, 0.85);
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.kalama-park-info h2 {
+  grid-column: 4/9;
+  font-family: 'Niconne', cursive;
+  font-weight: 550;
+}
+
+.kalama-park-map {
+  grid-column: 3/10;
+  justify-self: center;
+}
+
+.kalama-park-photos {
+  grid-column: 1/12;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+
+/*-------------------------------*/
+/*-----kamaole beaches page------*/
+/*-------------------------------*/
+
+
+.kamaole-beaches-block {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 1rem;
+}
+
+
+.kamaole-beaches-info {
+grid-column: 1/12;
+background-color: rgba(255, 255, 255, 0.85);
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.kamaole-beaches-info h2 {
+  grid-column: 4/9;
+  font-family: 'Niconne', cursive;
+  font-weight: 550;
+}
+
+.kamaole-beaches-map {
+  grid-column: 3/10;
+  justify-self: center;
+}
+
+.kamaole-beaches-photos {
+  grid-column: 1/12;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+/*------------------------------*/
+/*-----keawakapu beach page-----*/
+/*------------------------------*/
+
+.keawakapu-block {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 1rem;
+}
+
+
+.keawakapu-info {
+grid-column: 1/12;
+background-color: rgba(255, 255, 255, 0.85);
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.keawakapu-info h2 {
+  grid-column: 4/9;
+  font-family: 'Niconne', cursive;
+  font-weight: 550;
+}
+
+.keawakapu-map {
+  grid-column: 3/10;
+  justify-self: center;
+}
+
+.keawakapu-photos {
+  grid-column: 1/12;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+/*-------------------------*/
+/*-----ulua beach page-----*/
+/*-------------------------*/
+
+.ulua-block {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 1rem;
+}
+
+
+.ulua-info {
+grid-column: 1/12;
+background-color: rgba(255, 255, 255, 0.85);
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.ulua-info h2 {
+  grid-column: 4/9;
+  font-family: 'Niconne', cursive;
+  font-weight: 550;
+}
+
+.ulua-map {
+  grid-column: 3/10;
+  justify-self: center;
+}
+
+.ulua-photos {
+  grid-column: 1/12;
+  box-shadow: 5px 5px 5px black;
+}
+
+
+
 /*--------------------------------*/
 /*-----west maui beaches page-----*/
 /*--------------------------------*/
@@ -427,4 +574,39 @@ footer {
   grid-gap: 30px;
   padding-top: 60px;
 
+}
+
+
+/*---------------------------------*/
+/*-----north maui beaches page-----*/
+/*---------------------------------*/
+.north-beaches-block {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 1rem;
+}
+
+
+.north-beaches-info {
+grid-column: 1/12;
+background-color: rgba(255, 255, 255, 0.85);
+padding: 20px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.north-beaches-info h2 {
+  grid-column: 4/9;
+  font-family: 'Niconne', cursive;
+  font-weight: 550;
+}
+
+.north-beaches-map {
+  grid-column: 3/10;
+  justify-self: center;
+}
+
+.north-beaches-photos {
+  grid-column: 1/12;
+  box-shadow: 5px 5px 5px black;
 }

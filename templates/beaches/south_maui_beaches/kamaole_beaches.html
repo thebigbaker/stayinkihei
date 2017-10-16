@@ -1,2 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
 
-<h1>Kamaole Beaches Page</h1>
+{% block title %} Beaches {% endblock %}
+
+
+<!---{% block additional_styles %}
+<style>
+body {
+  font-family: arial;
+  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+{% endblock %}--->
+{% block main %}
+
+<div class="kamaole-beaches-block">
+  <div class="kamaole-beaches-info">
+    <h2>Kamaole Beaches</h2>
+    <p>Broken down into three separate beaches (Kam I, Kam II and Kam III)
+      these beaches have great soft sand, great swimming, good snorkeling, and
+      at times good waves for body boarding. All three of the Kam Beaches have
+      lifeguards, restrooms, showers and charcoal grills.<br>
+      <br>
+      Kam I is across the street from our Pacific Shores condo and Kam II is
+      directly across the street from our Kihei Kai Nani condo.  Kam I is the
+      larger of the three beaches and has good snorkeling around the rocks at
+      each end of the beach.  Snorkeling is great on either end of Kam II, but
+      we prefer the south end (left side that separates Kam II and III) a
+      little better.<br>
+      <br>
+      Kam III has a huge lawn which can get crowded on the weekends (It seems l
+      ike every weekend there is a birthday party w/ multiple jumping castles
+      on the Kam III lawn!). If waves are coming in, Kam III also is the best
+      body board spot of the three Kams.
+    </p>
+  </div>
+
+  <div class="kamaole-beaches-photos">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox" style=" width:100%; height: 500px !important;">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bedroom_one.jpg' %}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bath_one.jpg' %}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/kitchen_dinning.jpg' %}" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="kamaole-beaches-map">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ev3SvYZA3RDLLztUVIrCTR3NlxE"
+    width="640" height="480"></iframe>
+  </div>
+</div>
+
+{% endblock %}
