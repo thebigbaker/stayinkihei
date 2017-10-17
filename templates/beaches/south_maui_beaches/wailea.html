@@ -1,2 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
 
-<h1>Wailea Beach Page</h1>
+{% block title %} Beaches {% endblock %}
+
+
+<!---{% block additional_styles %}
+<style>
+body {
+  font-family: arial;
+  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+{% endblock %}--->
+{% block main %}
+<h3 class="beach-nav-title">South Maui Beaches</h3>
+
+<div class="beach-nav">
+  <nav>
+    <ul class="nav nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'kalama_park' %}">Kalama Park</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'kamaole_beaches' %}">Kamaole Beaches</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'keawakapu' %}">Keawakapu Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'ulua' %}">Ulua Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'wailea' %}">Wailea Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'palauea' %}">Palauea Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'poolenalena' %}">Po'olenalena Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'maluaka' %}">Maluaka Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'big_beach' %}">Big Beach</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="beach-block">
+  <div class="beach-info">
+    <h2>Wailea Beach</h2>
+    <p>Whenever you see pictures of movies stars on the beach in Maui, this is
+      usually the beach they visit (mainly because they tend to stay at the
+      Grand Wailea). Great swimming beach with good snorkeling and body
+      boarding on the south side (left) when the surf is up. Since there are a
+      few large resorts at this beach (Grand Wailea and Four Seasons), it can
+      get crowded here.<br>
+      <br>
+      Swimming can be great and when the swell is up, body boarding can be good
+      also.  Snorkeling can be good on both ends but we prefer the south side
+      (left side) of the beach as there is a very large reef here.  It can be
+      hit or miss depending on how much sand is being kicked up by the surf,
+      but if you are a good swimmer, you can really go out far on the south end
+      reef as it extends hundreds of yards out and gets much more clear
+      compared to closer to the shore.  Some tour boats will anchor off this
+      reef and let out snorkelers and divers to swim this area (I've snorkeled
+      out to these areas several times, but please only do this is you are a
+      good swimmer and experienced snorkeler!  We've seen lots of fish,
+      including some big trevally and several turtles.<br>
+      <br>
+      Parking is just after the Grand Wailea and marked on the map below.
+      Restrooms and showers are provided at this parking location:
+    </p>
+  </div>
+
+  <div class="beach-photos">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox" style=" width:100%; height: 500px !important;">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bedroom_one.jpg' %}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/bath_one.jpg' %}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static 'imgs/condos/kihei_kai_nani/kitchen_dinning.jpg' %}" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+    <div class="beach-map">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gJcO-5-IPeCvIUX0VY8fZf0q0Mc" 
+      width="640" height="480"></iframe>
+    </div>
+  </div>
+  {% endblock %}

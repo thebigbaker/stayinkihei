@@ -17,9 +17,44 @@ body {
 </style>
 {% endblock %}--->
 {% block main %}
+<h3 class="beach-nav-title">South Maui Beaches</h3>
 
-<div class="ulua-block">
-  <div class="ulua-info">
+<div class="beach-nav">
+  <nav>
+    <ul class="nav nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'kalama_park' %}">Kalama Park</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'kamaole_beaches' %}">Kamaole Beaches</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'keawakapu' %}">Keawakapu Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'ulua' %}">Ulua Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'wailea' %}">Wailea Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'palauea' %}">Palauea Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'poolenalena' %}">Po'olenalena Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'maluaka' %}">Maluaka Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'big_beach' %}">Big Beach</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="beach-block">
+  <div class="beach-info">
     <h2>Ulua Beach</h2>
     <p>Great snorkeling at this beach! The north side (right side) has a great
       shallow coral formation with lots of fish and several turtles. We've run
@@ -38,7 +73,7 @@ body {
     </p>
   </div>
 
-  <div class="ulua-photos">
+  <div class="beach-photos">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -66,8 +101,8 @@ body {
       </a>
     </div>
   </div>
-    <div class="ulua-map">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1nGiLXHSlpyvMy0dNC2JYkEgJT4A" 
+    <div class="beach-map">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1nGiLXHSlpyvMy0dNC2JYkEgJT4A"
       width="640" height="480"></iframe>
     </div>
   </div>
