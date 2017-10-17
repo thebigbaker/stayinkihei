@@ -41,6 +41,6 @@ urlpatterns = [
     url(r'^places-to-eat/paia-restaurants/$', views.PaiaRestaurantsView.as_view(), name='paia_restaurants'),
     url(r'^more-maui-info/$', views.MoreMauiInfoView.as_view(), name='more_maui_info'),
     url(r'^more-maui-info/groceries/$', views.GroceriesView.as_view(), name='groceries'),
-
+    url(r'^contact-us/$', views.ContactView.as_view(), name='contact'),
 
 ]

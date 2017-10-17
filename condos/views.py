@@ -122,3 +122,6 @@ class MoreMauiInfoView(TemplateView):
 
 class GroceriesView(TemplateView):
     template_name = 'more_maui_info/groceries.html'
+
+class ContactView(TemplateView):
+    template_name = 'contact_us.html'
