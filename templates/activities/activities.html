@@ -4,5 +4,120 @@
 {% block title %} Activities {% endblock %}
 
 
-{%  block body_block %}
+<!---{% block additional_styles %}
+<style>
+body {
+  font-family: arial;
+  background: url({% static 'imgs/index/palm_trees_sunglow.jpg' %}) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+{% endblock %}--->
+
+
+{%block main%}
+<div class="card-block">
+  <div class="card-deck">
+    <div class="card">
+      <a href="{% url 'alii_kula_lavendar_farm' %}">
+        <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+      </a>
+        <div class="card-body">
+          <h4 class="card-title">Ali'i Kula Lavender Farm</h4>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Click the picture for more Kalama Park pictures and info!</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="{% url 'aquarium' %}">
+          <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Maui Ocean Center and Aquaruim</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Click the picture for more Kamaole Beach pictures and info!</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="{% url 'drive_to_hana' %}">
+          <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Drive to Hana</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Click the picture for more Keawakapu Beach pictures and info!</small></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-deck">
+      <div class="card">
+        <a href="{% url 'haleakala' %}">
+          <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Haleakala</h4>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Click the picture for more Ulua Beach pictures and info!</small></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="{% url 'la_perouse_bay' %}">
+          <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">La Perouse Bay</h4>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Click the picture for more Wailea Beach pictures and info!</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <a href="{% url 'maui_friday_town_parties' %}">
+          <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Maui Friday Town Parties</h4>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Click the picture for more Palauea Beach pictures and info!</small></p>
+        </div>
+      </div>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <a href="{% url 'old_lahaina_luau' %}">
+            <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Old Lahaina Luau</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Click the picture for more Po'olenalena Beach pictures and info!</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="{% url 'snorkeling' %}">
+            <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Snorkeling</h4>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Click the picture for more Maluaka Beach pictures and info!</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="{% url 'whale_watching' %}">
+          <img class="card-img-top" src="{% static 'imgs/beaches/south_maui/beach_thumb.jpg' %}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Whale Watching</h4>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-muted">Click the picture for more Big Beach pictures and info!</small></p>
+          </div>
+        </div>
+      </div>
+</div>
 {% endblock %}

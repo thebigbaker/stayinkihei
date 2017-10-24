@@ -253,8 +253,8 @@ footer {
   grid-column: 1/12;
   padding: 40px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  /*font-size: 14px;*/
+  /*font-weight: 500;*/
   background-color: rgba(255, 255, 255, 0.85)
 }
 
@@ -367,6 +367,8 @@ footer {
 /*---------------------------------*/
 /*-----south maui beaches page-----*/
 /*---------------------------------*/
+
+/*global card settings*/
 
 .card-deck h4{
   font-family: 'Niconne', cursive;
