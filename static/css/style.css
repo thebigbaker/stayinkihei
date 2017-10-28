@@ -574,3 +574,11 @@ font-family: Arial, Helvetica, sans-serif;
   grid-column: 1/12;
   box-shadow: 5px 5px 5px black;
 }
+
+
+/*---whale watching page---*/
+.whale-video {
+  grid-column: 3/10;
+  justify-self: center;
+  margin-top: 20px;
+}
