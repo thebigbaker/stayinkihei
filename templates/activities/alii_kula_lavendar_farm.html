@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %} Ali'i Kula Lavndar Farm {% endblock %}
+{% block title %} Ali'i Kula Lavendar Farm {% endblock %}
 
 
 <!---{% block additional_styles %}
@@ -17,28 +17,80 @@ body {
 </style>
 {% endblock %}--->
 {% block main %}
-<h3 class="beach-nav-title">Ali'i Kula Lavndar Farm</h3>
+<h3 class="beach-nav-title">South Maui Beaches</h3>
+
+<div class="beach-nav">
+  <nav>
+    <ul class="nav nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'kalama_park' %}">Kalama Park</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'kamaole_beaches' %}">Kamaole Beaches</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'keawakapu' %}">Keawakapu Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'ulua' %}">Ulua Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'wailea' %}">Wailea Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'palauea' %}">Palauea Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'poolenalena' %}">Po'olenalena Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'maluaka' %}">Maluaka Beach</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'big_beach' %}">Big Beach</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
 
-
-<div class="beach-block">
-  <div class="beach-info">
-    <h2>Kalama Park / Cove Beach</h2>
-    <p>Kalama Park is a large park that has just about everything to keep
-      families entertained.  The park includes playground equipment, a skate
-      park, roller hockey ring, tennis courts, sand volleyball courts, baseball
-      and soccer fields.  There are also several pavilions which make for an
-      ideal place for large gatherings and outdoor parties. <br>
+<div class="info-block">
+  <div class="info-content">
+    <h2>Ali'i Kula Lavendar Farm</h2>
+    <p>Situated up at an elevation of 4,000ft along the slope of Haleakala, the
+      bi-coastal views from Ali'i Kula Lavender Farm are some of the best on
+      the island.  The 13.5 acre farm makes for a great stop as you make your
+      way up Haleakala for sunset or a stop on the way down from your early
+      morning Halaeakala sunrise.<br>
       <br>
-      The shoreline makes a great place to sit and watch for whales or view
-      sunsets.  The water here is not the best for swimming, however at the south
-      end of the park is "The Cove," which is a small beach area that is a very
-      popular surfing spot.  The small waves here makes this the ideal place for
-      beginner surfers and there are a couple of companies right across the
-      street from here that offer surfing lessons.</p>
+      There are beautiful walking paths throughout the farm that are lined with
+      several different species of flowers and trees such as proteas, birds of
+      paradise, hydrangeas, roses, pincushions and over 40 varieties of
+      lavender.  There are also several places throughout the farm to take
+      pictures of the vast upcountry views as you look down upon Wailea, Kihei,
+      Ma'alaea, Wailuku and Kahalui.<br>
+      <br>
+      Entry prices are $3 per person and keikis 12 and under are free.  They do
+      offer guided walking tours and cart tours throughout the morning and
+      afternoon, so check out their website for tour prices and tour schedules:
+      <a href="http://www.aliikulalavender.com" target="_blank">Ali'i Kula
+        Lavendar Farm</a><br>
+      <br>
+      Make sure to check out the gift shop and try a cup of lavender tea and a
+      freshly baked lavender scone with lilikoi jam.  The shop also includes
+      several products made with lavender including soaps, lotions and candles.
+       The shop also sells bags of lavender tea and lavender scone mix to bake
+       at home along with other food and drink items.<br>
+      <br>
+      Ali'i Lavender Farm is located in the town of Kula and is about an hour
+      to 1.5 hr drive from Kihei, depending on how many times you pull over to
+      take pictures on the way up.  There is a very small sign for the farm at
+      the intersection of Kekauliki Ave and Waipoli Rd, so it's easy to miss
+      this turn to the farm.  Below is a map for Ali'i Kula Lavender Farm:
+    </p>
   </div>
 
-  <div class="beach-photos">
+  <div class="info-photos">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -66,12 +118,9 @@ body {
       </a>
     </div>
   </div>
-
-  <div class="beach-map">
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1jcwVX-ATyTkb3aXdjwJUSv7DMaM"
-    width="640" height="480"></iframe>
+    <div class="info-map">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1A0CPYYbfgtVKXHDulvPIZDMiySo" 
+      width="640" height="480"></iframe>
+    </div>
   </div>
-
-</div>
-
-{% endblock %}
+  {% endblock %}
